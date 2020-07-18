@@ -1,0 +1,12 @@
+body { 
+    background: lightgrey;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+.imagen1{
+    width:640px;
+    height:545px;
+    image-resolution: 300dpi;
+}

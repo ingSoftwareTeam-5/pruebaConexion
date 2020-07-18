@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quedate en casa System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark static-top" style="background-color: darkblue;">
+        <div class="container">
+            <a class="navbar-brand">Quedate en casa System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="col-2"></a>
+            <center>
+                <a class="navbar-brand">Bienvenido (USUARIO)</a>
+            </center>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Volver al perfil</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row align-item-center">
+                    <div class="col-lg-4">
+
+                        <div class="mt-3">
+                            <label for="region">Region Origen</label>
+                            <input type="text" name="region" id="region" list="nombre_regiones" />
+                            <!-- options extraidos de winpy.cl -->
+                            <datalist id="nombre_regiones">
+                                <option value="" disabled selected>Seleccione...</option>
+                                <option value="RM">Región Metropolitana</option>
+                                <option value="XV">XV región</option>
+                                <option value="I">I región</option>
+                                <option value="II">II región</option>
+                                <option value="III">III región</option>
+                                <option value="IV">IV región</option>
+                                <option value="V">V región</option>
+                                <option value="VI">VI región</option>
+                                <option value="VII">VII región</option>
+                                <option value="VIII">VIII región</option>
+                                <option value="IX">IX región</option>
+                                <option value="XIV">XIV región</option>
+                                <option value="X">X región</option>
+                                <option value="XI">XI región</option>
+                                <option value="XII">XII región</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="ciudad">Ciudad Origen</label>
+                            <input type="text" name="ciudado" id="ciudado" list="nombre_ciudades" />
+                            <datalist id="nombre_ciudades">
+                                <option value="" disabled selected>Seleccione...</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="fecha">Fecha Viaje</label>
+                            <input type="text" name="" id="fecha" list="fechas_disponibles" />
+                            <datalist id="fechas_disponibles">
+                                <option value="" disabled selected>Seleccione...</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="pasajes">Cantidad Pasajes</label>
+                            <input type="text" name="cantidadpas" id="cantidadpas" list="cantidad_pas" />
+                            <datalist id="cantidad_pas">
+                                <option value="" disabled selected>Seleccione...</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mt-3">
+                            <!-- aplicar botonera de asientos (estilo bus) -->
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="mt-3">
+                            <label for="region">Region Destino</label>
+                            <input type="text" name="region" id="region" list="nombre_regiones" />
+                            <datalist id="nombre_regiones">
+                                <option value="" disabled selected>Seleccione...</option>
+                                <option value="RM">Región Metropolitana</option>
+                                <option value="XV">XV región</option>
+                                <option value="I">I región</option>
+                                <option value="II">II región</option>
+                                <option value="III">III región</option>
+                                <option value="IV">IV región</option>
+                                <option value="V">V región</option>
+                                <option value="VI">VI región</option>
+                                <option value="VII">VII región</option>
+                                <option value="VIII">VIII región</option>
+                                <option value="IX">IX región</option>
+                                <option value="XIV">XIV región</option>
+                                <option value="X">X región</option>
+                                <option value="XI">XI región</option>
+                                <option value="XII">XII región</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="ciudad">Ciudad Destino</label>
+                            <input type="text" name="ciudaddes" id="ciudaddes" list="nombre_ciudades" />
+                            <datalist id="nombre_ciudades">
+                                <option value="" disabled selected>Seleccione...</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="ciudad">Medio de Pago</label>
+                            <input type="text" name="pago" id="pago" list="lista_pagos" />
+                            <datalist id="lista_pagos">
+                                <option value="" disabled selected>Seleccione...</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="ciudad">Total</label>
+                            
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="ciudad">Total con descuento</label>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

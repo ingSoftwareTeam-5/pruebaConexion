@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <title>Login</title>
+</head>
+<body>
+       
+
+<form action="/users/login" method= "POST">
+   
+       <center>
+        
+        
+        <h2 class="py-3">Login</h2>
+       
+        <div>
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required/>
+        </div>
+        <div>
+            <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" required minlength="8"/>
+        </div>
+        
+        <div>
+            <input type="submit" value="Login"/>
+        </div>
+        <div><a href="/users/register">Register</a></div>
+        <div><a href="RecuperarContrasena"> Recuperar contrasena</a></div>
+        
+    </div>
+    
+       </center>
+    
+</form>
+
+</body>
+</html>

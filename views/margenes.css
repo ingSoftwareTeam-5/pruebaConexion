@@ -1,0 +1,11 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+div contenedorgen{
+    margin: auto;
+    margin-top: 50px;
+    width: 960px;
+    height: 800px;
+    background-color: green;
+}

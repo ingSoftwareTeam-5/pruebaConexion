@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Quedate en casa System</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark static-top" style="background-color: teal;">
+        <div class="container">
+          <a class="navbar-brand" href="#">Quedate en casa System</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="vista2.html">Login
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-------------------PARTE INFERIOR------------------------>
+  <div class="container" style="margin-top: 100px; margin-left:100px; margin-right:100px; 
+  margin-bottom: 100px;" >
+    <div class="row">
+      <div class="col-lg-12 ">
+        <!-- Agregar aca el registro de usuario-->
+          <div class="row align-items-center  " >
+<!------------------------------------------------------------------------------------------------>
+            <!-- AGREGAR IMAGEN O ALGO EN COL -4-->
+            <div class="col-5" >
+              <div class="row" style="padding-left: 50px;padding-top: 50px;" >
+                  <P style="font-size: medium ; text-align: justify;"> 
+                    Quedate en casa es una empresa dedicada al transporte de pasajeros dentro del país de Chile.
+                    Este 2020, por los problemas ocacionados por la pandemia del COVID-19, se ha decidido por proteger 
+                    a nuestra distinguida clientela, a nuestros pasajeros, es por ello que nace la iniciativa de Quedate en Casa System,
+                    que permitirá realizar las reservas de pasajes de manera online.
+                  </P>
+                
+                
+            </div>   
+             
+            
+            
+          </div>
+            <div class="col-2"></div>
+            <form action="/users/register" method= "POST"></form>
+              
+              <div class="col-lg-5 ">
+                <div class="row" style="padding-top: 30px;">
+                  <div class="col-2">
+                   
+                    <h2>
+                      <p style="color: bg-primary";>Registrarse</p>
+                    </h2>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-lg-2">
+                    
+                        <div class ="mt-3" >
+                            <input type="text"  name = "name" id="name"placeholder="NOMBRE COMPLETO" autocomplete="off" required/>
+                        </div>
+                        <div class ="mt-3">
+                            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required/>
+                        </div>
+                        <div class ="mt-3">
+                            <input type="text" name="run" id="run" placeholder="RUN" autocomplete="off" required>
+                        </div>
+                
+                        <div class ="mt-3">
+                            <input type="number" name="edad" id="edad" placeholder="EDAD" autocomplete="off" min="0" required>
+                        </div>
+                    
+                  </div>
+                  <div class=" col-3"></div>
+                  <div class=" col-2">
+                    <div class="mt-3">
+                      <input type="text" name="sexo" id="sexo" placeholder="Masculino o Femenino" autocomplete="off" required/>
+                      <!---
+                      <select class="form-control width:10px height:300px" id="sel1" name="sellist1" placeholder="Masculino o Femenino">
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                      </select>
+                      -->
+                      </div>
+        
+                    <div class="mt-3">
+                        <input type="text" name="direccion" id="direccion" placeholder="Ej: Algun lugar, Ciudad" autocomplete="off" required/>
+                    </div>
+            
+                    <div class="mt-3">
+                        <input type="password" name="password" id="password" placeholder="CONTRASEÑA" autocomplete="off" required minlength="8"/>
+                    </div>
+                    <div class="mt-3">
+                      <input type="password"  name="password2" id="password2" placeholder="CONF. CONTRASEÑA" autocomplete="off"  required minlength="8"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1"></div>
+                  <div class="col-1"></div>
+                  <div class="col-1"></div>
+                  
+                  <div class="mt-3 col-4">
+                    <center>
+                      <input type="submit" value="REGISTRAR"/>
+                  
+                    </center>
+                     
+                  </div>
+                </div>
+                <!---<a href="/users/login">Already registered? Login here</a>-->
+                </div> 
+
+
+              </div>
+              
+                
+            
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

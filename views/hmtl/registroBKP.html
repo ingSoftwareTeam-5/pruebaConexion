@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <title>Register</title>
+</head>
+<body>  
+   
+<form action="/users/register" method= "POST">
+       <center>
+        
+
+        <h1 class="py-5 text-center"> </h1>
+        <h1 class="py-5 text-center">Quedate en casa system </h1>
+        
+        <h2 class="py-3">Register</h2>
+        <div>
+            <input type="text"  name = "name" id="name"placeholder="Name" autocomplete="off" required/>
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required/>
+        </div>
+        <div>
+            <input type="text" name="run" id="run" placeholder="RUN" autocomplete="off" required>
+        </div>
+
+        <div>
+            <input type="number" name="edad" id="edad" placeholder="Edad" autocomplete="off" min="0" required>
+        </div>
+        <div>
+            <input type="text" name="sexo" id="sexo" placeholder="Masculino o Femenino" autocomplete="off" required/>
+        </div>
+
+        <div>
+            <input type="text" name="direccion" id="direccion" placeholder="Ej: Algun lugar, Ciudad" autocomplete="off" required/>
+        </div>
+
+        <div>
+            <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" required minlength="8"/>
+        </div>
+        <input type="password"  name="password2" id="password2" placeholder="Confirm Password" autocomplete="off" required minlength="8"/>
+        <div>
+            <input type="submit" value="Register"/>
+        </div>
+        <a href="/users/login">Already registered? Login here</a>
+    </div>
+    
+       </center>
+    
+</form>
+
+</body>
+</html>

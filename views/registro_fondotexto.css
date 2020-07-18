@@ -1,0 +1,23 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    background-color: white;
+}
+
+.texto1{
+    background-color: transparent;
+    color: #000;
+    position: absolute;
+}
+
+.fondotexto1{
+    background-color: white;
+    background-size: cover;
+}
+
+.trans{
+    opacity: 0.5;
+}
