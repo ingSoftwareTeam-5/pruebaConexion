@@ -14,59 +14,17 @@ function initialize(passport) {
         if (err) {
           throw err;
         }
-        //console.log(results.rows);
-
         if (results.rows.length > 0) {
-          const user = results.rows[0];
-          console.log('encontro coincidencia');
-          //console.log(password, user.passwd);
-          /*
-               bcrypt.compare(password, user.passwd, (err, isMatch) => {
-            //console.log(password, user.passwd);
-            if (err) {
-              console.log(err);
-            }
-            if (isMatch) {
-              console.log('passwd correcta');
+            const user = results.rows[0];
+            console.log('encontro coincidencia');
+            var passwdIsValid = bcrypt.compare(password, user.passwd);
+          if(passwdIsValid){
+              console.log("authentication successful");
               return done(null, user);
-            } else {
-              //password is incorrect
-              console.log('passwd incorrecta');
+          }else{
+              console.log("authentication failed. Password doesn't match");
               return done(null, false, { message: "Password is incorrect" });
-            }
-          });
-
-          */
-         /*
-         //bcrypt.compareSync(password, user.passwd);
-         var result = bcrypt.compareSync(password, user.password);
-        if (result) {
-            console.log("Password correct");
-        } else {
-            console.log("Password wrong");
-        } */
-        var passwdIsValid = bcrypt.compare(password, user.passwd);
-        if(passwdIsValid){
-            console.log("authentication successful");
-            return done(null, user);
-        }else{
-            console.log("authentication failed. Password doesn't match");
-            return done(null, false, { message: "Password is incorrect" });
-        }
-        
-         /* bcrypt.compare(password,user.passwd).then((result)=>{
-            if(result){
-                console.log("authentication successful")
-                return done(null, user);
-                // do stuff
-            } else {
-                console.log("authentication failed. Password doesn't match")
-                // do other stuff
-                return done(null, false, { message: "Password is incorrect" });
-            }
-            })
-            .catch((err)=>console.error(err))*/
-//-------------------------------------------------------------------------------------------------//
+          }
         } else {
           // No user
           console.log('no encontro coincidencia');
@@ -85,11 +43,8 @@ function initialize(passport) {
     )
   
   );
-
- //console.log('Parada 1');
   passport.serializeUser((user, done) => done(null, user.idusuario));
   passport.deserializeUser((idusuario, done) => {
-    //console.log('Parada 2');
     pool.query('select * from usuarioprueba where idusuario = $1', [idusuario], (err, results) => {
       if (err) {
         return done(err);

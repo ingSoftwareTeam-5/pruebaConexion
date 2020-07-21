@@ -5,7 +5,6 @@ const bcrypt = require('bcrypt');
 const session = require('express-session');
 const flash = require('express-flash');
 const query = require('./conexion/consultas');
-const { validarEmail } = require('./conexion/consultas');
 const passport = require('passport');
 
 //const initializePassport = require('./conexion/passportConfig');
