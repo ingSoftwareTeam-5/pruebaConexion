@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quedate en casa System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="seleccionarviaje_estilo1.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark static-top" style="background-color: darkblue;">
+        <div class="container">
+            <a class="navbar-brand">Quedate en casa System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="col-2"></a>
+            <center>
+                <a class="navbar-brand">Bienvenido (USUARIO)</a>
+            </center>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Volver al perfil</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br><br>
+        <div class="col-md-3" style="background-color: yellowgreen;">
+            <div class="row">
+                <h5>Fecha Actual: </h5>
+
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row align-item-center">
+                    <div class="col-lg-4">
+
+                        <div class="mt-3">
+                            <label for="region">Region Origen</label>
+                            <input type="text" name="region" id="region" placeholder="       Origen" 
+                            list="nombre_regiones" />
+                            <!-- options extraidos de winpy.cl -->
+                            <datalist id="nombre_regiones">
+                                <option value="" disabled selected>Seleccione...</option>
+                                <option value="RM">Región Metropolitana</option>
+                                <option value="XV">XV región</option>
+                                <option value="I">I región</option>
+                                <option value="II">II región</option>
+                                <option value="III">III región</option>
+                                <option value="IV">IV región</option>
+                                <option value="V">V región</option>
+                                <option value="VI">VI región</option>
+                                <option value="VII">VII región</option>
+                                <option value="VIII">VIII región</option>
+                                <option value="IX">IX región</option>
+                                <option value="XIV">XIV región</option>
+                                <option value="X">X región</option>
+                                <option value="XI">XI región</option>
+                                <option value="XII">XII región</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="ciudad">Ciudad Origen</label>
+                            <input type="text" name="ciudad_o" id="ciudad_o" placeholder="       Origen" 
+                            list="nombre_ciudades" />
+                            <datalist id="nombre_ciudades">
+                                <option value="" disabled selected>Seleccione...</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mt-3">
+                            <!-- aplicar botonera de asientos (estilo bus) -->
+
+                            <label for="pasajes">Seleccionar Asiento</label>
+                            <input type="text" name="asientos" id="asientos" list="listaasientos" size="2" />
+                            <div class="col-md-1">
+                                <datalist id="listaasientos">
+                                    <option value="" disabled selected>Seleccione</option>
+                                </datalist>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="mt-3">
+                            <label for="region">Region Destino</label>
+                            <input type="text" name="region" id="region" placeholder="       Destino" 
+                            list="nombre_regiones" />
+                            <datalist id="nombre_regiones">
+                                <option value="" disabled selected>Seleccione...</option>
+                                <option value="RM">Región Metropolitana</option>
+                                <option value="XV">XV región</option>
+                                <option value="I">I región</option>
+                                <option value="II">II región</option>
+                                <option value="III">III región</option>
+                                <option value="IV">IV región</option>
+                                <option value="V">V región</option>
+                                <option value="VI">VI región</option>
+                                <option value="VII">VII región</option>
+                                <option value="VIII">VIII región</option>
+                                <option value="IX">IX región</option>
+                                <option value="XIV">XIV región</option>
+                                <option value="X">X región</option>
+                                <option value="XI">XI región</option>
+                                <option value="XII">XII región</option>
+                            </datalist>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="ciudad">Ciudad Destino</label>
+                            <input type="text" name="ciudad_des" id="ciudad_des" placeholder="       Destino" 
+                            list="nombre_ciudades" />
+                            <datalist id="nombre_ciudades">
+                                <option value="" disabled selected>Seleccione...</option>
+                            </datalist>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="mt-4">
+                            <img src="https://www.busesromani.cl/assets/site/web/img/155@2x.jpg" alt="Cantidad">
+                            <label> Cantidad de pasajes: </label>
+                            <select name="ticket" id="ticket" required="required">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="fecha">Fecha Viaje</label>
+                            <input type="date" name="" id="fecha" list="fechas_disponibles" />
+                            <img class="minihorario" src="minihorario.png" width="50" height="50">
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="pago">Medio de Pago</label>
+                            <select name="pago" id="pago" required="required">
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Tarjeta">Tarjeta</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="ciudad">Total: </label>
+
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="ciudad">Total con descuento: </label>
+
+                        </div>
+
+                        <div class="mt-3">
+                            <button class="PagarReserva" href="#" 
+                            style="background-color: rgb(236, 233, 49);">Pagar Reserva</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    background-image: url(panoramicasantiago.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(90deg, #ddbe59, #52c4df);
+    opacity: 0.6;
+}

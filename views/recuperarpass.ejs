@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <title>Recupera Tu Contraseña</title>
+</head>
+<body>
+       
+<form action="/users/recuperarpass" method= "POST">
+   
+       <center>
+        <h2 class="py-3">Recuperar Contraseña</h2>
+        <div>
+            <input type="text" name="run" id="run" placeholder="Run" autocomplete="off" required/>
+        </div>
+        <div>
+            <input type="password" name="password" id="password" placeholder="New pass" autocomplete="off" required/>
+        </div>
+        <div>
+            <input type="submit" value="enviar"/>
+        </div>
+        <div><a href="/users/login">Voler al Login</a></div>
+        </div>
+       </center>
+</form>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src ="/recuperarpass.js"></script>
+</body>
+</html>
